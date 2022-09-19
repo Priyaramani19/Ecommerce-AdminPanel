@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screen.Update.UpdateActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/actionBar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@color/app_color"
+                android:elevation="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/backBtn"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/ripple_effect">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/backbutton"
+                        app:tint="@color/white" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Update Product"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/actionBar"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:id="@+id/nameTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Name"
+                    android:textColor="@color/app_color"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/nameEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/nameTxt"
+                    android:backgroundTint="#80000000"
+                    android:drawableStart="@drawable/product"
+                    android:drawablePadding="15dp"
+                    android:drawableTint="@color/app_color"
+                    android:hint="Product Name"
+                    android:textCursorDrawable="@color/black"
+                    android:textSize="15sp"
+                    tools:targetApi="m" />
+
+                <TextView
+                    android:id="@+id/descTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nameEdt"
+                    android:layout_marginTop="10dp"
+                    android:text="Product Name"
+                    android:textColor="@color/app_color"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/descEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/descTxt"
+                    android:backgroundTint="#80000000"
+                    android:drawableStart="@drawable/description"
+                    android:drawablePadding="15dp"
+                    android:drawableTint="@color/app_color"
+                    android:hint="Description"
+                    android:textCursorDrawable="@color/black"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:id="@+id/catEdt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_below="@id/descEdt"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border"
+                    android:elevation="10dp">
+
+                    <ImageView
+                        android:id="@+id/catImg"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/category"
+                        app:tint="@color/app_color" />
+
+                    <Spinner
+                        android:id="@+id/catSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/priceTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/catEdt"
+                    android:layout_marginTop="10dp"
+                    android:text="Product Name"
+                    android:textColor="@color/app_color"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/priceEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/priceTxt"
+                    android:backgroundTint="#80000000"
+                    android:drawableLeft="@drawable/price"
+                    android:drawablePadding="15dp"
+                    android:drawableTint="@color/app_color"
+                    android:hint="Price"
+                    android:textCursorDrawable="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/offerTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/priceEdt"
+                    android:layout_marginTop="10dp"
+                    android:text="Offer"
+                    android:textColor="@color/app_color"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/offerEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/offerTxt"
+                    android:backgroundTint="#80000000"
+                    android:drawableLeft="@drawable/offer"
+                    android:drawablePadding="15dp"
+                    android:drawableTint="@color/app_color"
+                    android:hint="Offer"
+                    android:textCursorDrawable="@color/black"
+                    android:textSize="15dp" />
+
+                <RelativeLayout
+                    android:id="@+id/cardImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_below="@id/offerEdt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:elevation="10dp"
+                            android:src="@drawable/put_image" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/updateImage"
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:layout_below="@id/image"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="30dp"
+                            android:elevation="10dp"
+                            app:cardBackgroundColor="@color/app_color"
+                            app:cardCornerRadius="20dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/imageIcon"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/add_image"
+                                    app:tint="@color/white" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toEndOf="@id/imageIcon"
+                                    android:text="Add Image"
+                                    android:textColor="@color/white"
+                                    android:textSize="15dp" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/updateProduct"
+                    android:layout_width="350dp"
+                    android:layout_height="55dp"
+                    android:layout_below="@id/cardImage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:elevation="10dp"
+                    app:cardBackgroundColor="@color/app_color"
+                    app:cardCornerRadius="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Update Product"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/alpha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha=".3"
+                android:background="@color/black"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

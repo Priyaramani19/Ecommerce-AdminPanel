@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "926221991379",
+    "project_id": "adminpanel-97428",
+    "storage_bucket": "adminpanel-97428.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926221991379:android:e0ad739c4a2e0f27a1c326",
+        "android_client_info": {
+          "package_name": "com.example.adminpanel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926221991379-sh0ua01isqrvk2hn5vosehmd1r2119o1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.adminpanel",
+            "certificate_hash": "6e0df3fd0e11f6e624a1ac85e068c5cdd58ee82b"
+          }
+        },
+        {
+          "client_id": "926221991379-hbqd9nvofv27i31fsrraum6cpcg842r1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjS2gSEoUcLCE9ddePaan2pN68UxBNDNo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926221991379-hbqd9nvofv27i31fsrraum6cpcg842r1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
